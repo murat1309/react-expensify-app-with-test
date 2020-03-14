@@ -40,4 +40,5 @@ in package json => "test": "jest --config=jest.config.json"
 3.) "git status" yaptın nelerin gidiceğini gördün ancak gitmesini istemediğin dosyaları için mesela node_modules .gitignore oluşturdun.
 4.) tekrar "git status" yap ve .gitignore klasöründe eklediğin dosyaların bu sefer görünmediğini görüceksin.
 5.) "git add ." ile herşeyi aldım dedin. git status ile kontrol ettin.
+6.) "git commit -m "Initial commit"
  
