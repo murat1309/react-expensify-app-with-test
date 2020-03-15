@@ -12,7 +12,6 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "serve": "live-server public/",
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
