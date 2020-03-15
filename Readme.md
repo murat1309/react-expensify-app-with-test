@@ -99,4 +99,6 @@ yarn add express@4.15.4
 8.) git status
 9.) git add .
 10.) git commit -m "sdasdas"
+11.) git push
+12.) git push heroku master
 
