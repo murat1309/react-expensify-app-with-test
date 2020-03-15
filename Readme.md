@@ -90,7 +90,7 @@ yarn add express@4.15.4
 ---------------------------HEROKU--------------------------
 1.) heroku --version yaz eğer yoksa heroku cli download yapman gerekir.
 2.) heroku login
-3.) heroku create react-course-expensify-app-with-test (=>First up behind the scenes Heroku is getting up your new application =>Second adding a new remote to your local repository)
+3.) heroku create react-expensify-app-with-test (=>First up behind the scenes Heroku is getting up your new application =>Second adding a new remote to your local repository)
 4.) git remote dersen gitin yanında artık herokununda olduğunu görürsün.
 5.) Heroku çalıştırmak için start scripti aricak. package.json'da bunu tanımlamamız gerekli.
 6.) herokuya webpackide öğretmemiz için package.json'da "heroku-postbuild": "yarn run build:prod" => yazarak webpackbproduction build is going to run on the Heroku server. 
@@ -98,7 +98,7 @@ yarn add express@4.15.4
  çünkü zaten heroku serverı ayağ kalktıında build:prod yapacağından bunları oluşturucaktır.
 8.) git status
 9.) git add .
-10.) git commit -m "sdasdas"
+10.) git commit -m "setup production and server"
 11.) git push
-12.) git push heroku master
+12.) git push heroku master(bunu yaptığımda package.lock.json ve yarn.lock her ikiside olduğundan hata verdi. .lock.json sil düzelir. )
 
