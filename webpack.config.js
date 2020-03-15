@@ -47,7 +47,7 @@ module.exports = (env) => {
         //biz bu kodu ekleyerek gerçekten bizim yazdığımız kendi kodumuza karşılık gelen yeri görebiliriz.
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
-            contentBase: path.resolve(__dirname, 'public'), //where     it can find out public files.
+            contentBase: path.resolve(__dirname, 'public'), //where it can find out public files.
             historyApiFallback: true                    //Similar to how configured live-server in package.json(live-server yerine geçicek gibi düşün.)
         }
     };

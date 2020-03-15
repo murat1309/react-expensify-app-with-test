@@ -73,7 +73,30 @@ git commit => Create a new commit with files from staging area
     Toplam style sayfası biriminiz büyükse, CSS paketi JS paketine paralel olarak yüklendiği için daha hızlı olacaktır.
     
 2.) webpack.config.js'de ilgili düzenlemeler yapıldıktan sonra tekrar npm run build:prod çalıştırırsan artık css dosyaların styles.css altında çalışacaktır.     
-3.) index.html sayfasında sayfa ilk açıldığında css'lerin yüklenebilmesi için yeni oluşan styles.css dosyasını <link> olarak eklemen lazım yoksa css yüklenmez..   
+3.) index.htindex.html sayfasında sayfa ilk açıldığında css'lerin yüklenebilmesi için yeni oluşan styles.css dosyasını <link> olarak eklemen lazım yoksa css yüklenmez.
 4.) npm run serve => ile çalıştır bakalım.
 
+-----------Artık bunu git' gönderelim------
+git status
+git add .
+git commit -m "..."
+git push
+------------------Production web server with EXPRESS----------
+yarn add express@4.15.4
+1.) server.js oluşturdun artık konsolda node server/server.js diye çalıştırdın ve 3000 portuna gittiğinde boş ekran görebilirsin.
+    sebebi assets dosyalarının olmaması styes.css yok bunun için yarn run build:prod çalıştırınca bundle.js ve style.css oluşuyordu bunu yap.
+    prod build çalıştırdıktan sonra node server/server.js çalıştırınca görürsün projeni.
+
+---------------------------HEROKU--------------------------
+1.) heroku --version yaz eğer yoksa heroku cli download yapman gerekir.
+2.) heroku login
+3.) heroku create react-course-expensify-app-with-test (=>First up behind the scenes Heroku is getting up your new application =>Second adding a new remote to your local repository)
+4.) git remote dersen gitin yanında artık herokununda olduğunu görürsün.
+5.) Heroku çalıştırmak için start scripti aricak. package.json'da bunu tanımlamamız gerekli.
+6.) herokuya webpackide öğretmemiz için package.json'da "heroku-postbuild": "yarn run build:prod" => yazarak webpackbproduction build is going to run on the Heroku server. 
+7.) üst satırda heroku server'ında yarn build:prod çalışacağından dolayı yani bundle.js ve styles.css dosyaları oluşacağından dolayı bunları .gitignore alıyoruz.
+ çünkü zaten heroku serverı ayağ kalktıında build:prod yapacağından bunları oluşturucaktır.
+8.) git status
+9.) git add .
+10.) git commit -m "sdasdas"
 
