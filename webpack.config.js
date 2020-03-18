@@ -12,7 +12,7 @@ module.exports = (env) => {
     return {
         entry: './src/app.js', //tell webpack where it should start.
         output: {
-            path: path.resolve(__dirname, 'public'), //where you wanna output webpack file (bundle.js)
+            path: path.resolve(__dirname, 'public', 'dist'), //where you wanna output webpack file (bundle.js)
             filename: 'bundle.js'
         },
         module: {
@@ -48,7 +48,8 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.resolve(__dirname, 'public'), //where it can find out public files.
-            historyApiFallback: true                    //Similar to how configured live-server in package.json(live-server yerine geçicek gibi düşün.)
+            historyApiFallback: true,                    //Similar to how configured live-server in package.json(live-server yerine geçicek gibi düşün.),
+            publicPath: '/dist'
         }
     };
 };

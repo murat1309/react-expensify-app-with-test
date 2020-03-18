@@ -102,3 +102,5 @@ yarn add express@4.15.4
 11.) git push
 12.) git push heroku master(bunu yaptığımda package.lock.json ve yarn.lock her ikiside olduğundan hata verdi. .lock.json sil düzelir. )
 
+(git remote rm heroku yazarsan remote'lardan heroku olanı silersin. Tekrar heroku create react-expensify-app-with-test ile oluşturup git push heroku master dersen sorun çıkmaz.)
+13.) heroku open (heroku logs ile logları görebilirsin.)
