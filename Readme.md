@@ -104,3 +104,8 @@ yarn add express@4.15.4
 
 (git remote rm heroku yazarsan remote'lardan heroku olanı silersin. Tekrar heroku create react-expensify-app-with-test ile oluşturup git push heroku master dersen sorun çıkmaz.)
 13.) heroku open (heroku logs ile logları görebilirsin.)
+
+
+--------------------GÜNCELLEME---------
+herhangi bir değişiklik yaptığında herokuya deoloy için;
+1.) git status => git add . => git commit -m "message" => git push => git push heroku master => heroku open
