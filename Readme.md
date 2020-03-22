@@ -117,7 +117,7 @@ herhangi bir değişiklik yaptığında herokuya deoloy için;
 3.) "heroku config:unset KEY" => bu set ettiğini kaldırmayaa yarar tekrar heroku config dersen kalktığını görürsün.
 heroku'dda env'leri tnaıtmal için ise develpment'daki db bilgilerini set etmemiz gerekli birer boşluk bırakarak yazıyoruz.
 
-heroku config:set FIREBASE_API_KEY=AIzaSyAQNlY7ZnDIgLBmhDr7oC0_zjqgANuP8L4 FIREBASE_API_KEY=AIzaSyAQNlY7ZnDIgLBmhDr7oC0_zjqgANuP8L4 FIREBASE_DATABASE_URL=https://exp
+heroku config:set FIREBASE_API_KEY=AIzaSyAQNlY7ZnDIgLBmhDr7oC0_zjqgANuP8L4 FIREBASE_AUTH_DOMAIN=expensify-7fd97.firebaseapp.com FIREBASE_DATABASE_URL=https://exp
 ensify-7fd97.firebaseio.com FIREBASE_PROJECT_ID=expensify-7fd97 FIREBASE_STORAGE_BUCKET=expensify-7fd97.appspot.com FIREBASE_MESSAGING_SENDER_ID=465999650962 FIREBASE_APP_ID=1:465999650962:web:9b27a343ef25f383aec6
 4b FIREBASE_MEASUREMENT_ID=G-MF4REPEPP6
 
