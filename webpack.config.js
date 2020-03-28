@@ -19,7 +19,7 @@ module.exports = (env) => {
     const CSSExtract = new ExtractTextPlugin('styles.css');
 
     return {
-        entry: './src/app.js', //tell webpack where it should start.
+        entry: ['babel-polyfill', './src/app.js'], //tell webpack where it should start. - babel-polyfill ile explorer'da bile çalışabilecek.
         output: {
             path: path.resolve(__dirname, 'public', 'dist'), //where you wanna output webpack file (bundle.js)
             filename: 'bundle.js'
